@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+
+    <title>Mikey</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    
+    <!-- global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-icon-style.css">
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+
+    <!-- Core stylesheets -->
+    <link rel="stylesheet" href="css/ui-elements/card.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<style>			
+		#pstu img{
+		border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+		width: 20rem;
+		height: 8rem;
+		margin: 1rem;
+		}
+		#pstu span{
+			font-family: "楷体";
+			font-weight: 600;
+			text-shadow: #761C19;
+			margin-left: 8rem;
+			font-size: 1.5rem;
+		}
+		.han{
+			line-height: 2rem;
+		}
+	</style>
+
+<!--====================================================
+                         MAIN NAVBAR
+======================================================-->        
+    <header class="header">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="search-box">
+                <button class="dismiss"><i class="icon-close"></i></button>
+                <form id="searchForm" action="#" role="search">
+                    <input type="search" placeholder="Search Now" class="form-control">
+                </form>
+            </div>
+            <div class="container-fluid ">
+                <div class="navbar-holder d-flex align-items-center justify-content-between">
+                    <div class="navbar-header">
+                        <a href="index.html" class="navbar-brand">
+                            <div class="brand-text brand-big hidden-lg-down"><h3>Mikey</h3></div>
+                            <div class="brand-text brand-small"><img src="img/logo-icon.png" alt="Logo" class="img-fluid"></div>
+                        </a>
+                        <a id="toggle-btn" href="#" class="menu-btn active">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                    <li class="nav-item dropdown"><a id="profile" class="nav-link logout" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle" style="height: 30px; width: 30px;"></a>
+                    </li>
+                </ul> 
+            </div>
+        </nav>
+    </header>
+
+<!--====================================================
+                        PAGE CONTENT
+======================================================-->
+    <div class="page-content d-flex align-items-stretch">
+
+        <!--***** SIDE NAVBAR *****-->
+        <nav class="side-navbar">
+            <div class="sidebar-header d-flex align-items-center">
+                <div class="avatar"><img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                <div class="title">
+                    <h1 class="h4">土琪色咸鸭蛋</h1>
+                </div>
+            </div>
+            <hr>
+            <!-- Sidebar Navidation Menus-->
+            <ul class="list-unstyled">
+                <li class="active"> <a href="index.html"><i class="icon-search"></i>搜索引擎</a></li>
+                <li><a href="#apps" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>知识收纳</a>
+                    <ul id="apps" class="collapse list-unstyled">
+                        <li><a href="calendar.html">技嘉/B450M DS3H</a></li>
+                        <li><a href="email.html">技嘉/A320M-S2H</a></li>
+                        <li><a href="media.html">华硕/猛禽B450-F</a></li>
+                        <li><a href="invoice.html">华硕/猛禽Z390-I</a></li>
+                    </ul>
+                </li>
+                <li><a href="#pages" aria-expanded="false" data-toggle="collapse"> <i class="fa fa-file-o"></i>CSS </a>
+                    <ul id="pages" class="collapse list-unstyled">
+                        <li><a href="faq.html">Intel 酷睿i5 9400F</a></li>
+                        <li><a href="gallery.html">Intel 酷睿i5 8400</a></li>
+                        <li><a href="empty.html">AMD 锐龙 5 2600X</a></li>
+                    </ul>
+                </li>
+                <li><a href="#elements" aria-expanded="false" data-toggle="collapse"> <i class="fa fa-globe"></i>装机知识</a>
+                    <ul id="elements" class="collapse list-unstyled">
+                        <li><a href="ui-buttons.html">Buttons</a></li> 
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="pstu" class="content-inner baijin">
+            <div class="row han">
+			  <div class="col-md-4">
+			  <a target="_blank" href="https://www.baidu.com"><img src="img/soso/baidu.png"/>
+			  <span>百度搜索</span> </a>		  
+			  </div>
+			  <div class="col-md-4">
+				   <a target="_blank" href="https://cn.bing.com"><img src="img/soso/bingpng.png" />
+				    <span>微软搜索</span></a>
+			  </div>
+			  <div class="col-md-4">
+				  <a target="_blank" href="http://lackar.com/aa/"><img src="img/soso/lackar.png" />
+				  <span>综合搜索</span></a>
+				  
+			  </div>
+			</div>	
+            <div class="row han">
+			  <div class="col-md-4">
+			  <a target="_blank" href="https://www.cupfox.com"><img src="img/soso/cupfox.png"/>
+			  <span>茶杯狐GO</span></a>
+			  </div>
+			  <div class="col-md-4">
+				   <a target="_blank" href="https://www.cn-ki.net"><img src="img/soso/cn-ki.png" />
+				   <span>知识搜索</span></a>
+			  </div>
+			  <div class="col-md-4">
+				  <a target="_blank" href="https://mijisou.com"><img src="img/soso/mijisou.png" />
+				  <span>秘迹搜索</span></a>
+				   
+			  </div>
+			</div>
+		    <div class="row han">
+				  <div class="col-md-4">
+					   <a target="_blank" href="https://getitfree.cn"><img src="img/soso/getitfree.png" />
+					   <span>正版中国</span></a>
+				  </div>
+				  <div class="col-md-4">
+					   <a target="_blank" href="https://www.asklib.com"><img src="img/soso/asklib.png" />
+					   <span>问答库搜</span></a>
+				  </div>
+				  <div class="col-md-4">
+					   <a target="_blank" href="https://www.52sopan.com"><img src="img/soso/52sopan.png" />
+					   <span>爱搜盘GO</span></a>
+				  </div>
+			</div>
+
+            <div class="row han">
+			  <div class="col-md-4">
+			  <a target="_blank" href="https://www.videograbber.net/zh"><img src="img/soso/Video_Grabber.png"/>
+			  <span>视频资源</span></a>
+			  </div>
+			  <div class="col-md-4">
+				   <a target="_blank" href="https://lightpdf.com/"><img src="img/soso/pdf.png" />
+				   <span>PDF转换</span></a>
+			  </div>
+			  <div class="col-md-4">
+				  <a target="_blank" href="http://www.aigei.com"><img src="img/soso/aigei.png" />
+				  <span>素材搜索</span></a>
+				  
+			  </div>
+			</div>
+		    <div class="row han">
+				  <div class="col-md-4">
+					<a target="_blank" href="http://www.hejizhan.com"><img src="img/soso/hejizhan.png" />
+					<span>知识外链</span></a>
+				 
+				  </div>
+				  <div class="col-md-4">
+					   <a target="_blank" href="https://search.chongbuluo.com"><img src="img/soso/chong.png" />
+					   <span>虫部落搜</span></a>
+				  </div>
+				  <div class="col-md-4">
+					   <a target="_blank" href="http://thestocks.im"><img src="img/soso/thestocks.png" />
+					   <span>图片资源</span></a>
+				  </div>
+			</div>
+
+            </div>
+
+            <!--***** FOOTER *****-->
+
+        </div>
+    </div> 
+
+    <!--Global Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper/popper.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/jquery.validate.min.js"></script> 
+    <script src="js/chart.min.js"></script> 
+    <script src="js/front.js"></script> 
+    
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>登录</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="" />
+    <!--  Social tags      -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    
+    
+</head>
+
+<body class="login-page sidebar-collapse">
+	<div class="page-header" filter-color="orange" style="margin: 0;">
+        <div class="page-header-image" style="background-image:url(assets/img/login.jpg)"></div>
+        <div class="container">
+            <div class="col-md-4 content-center">
+                <div class="card card-login card-plain">
+                        <div class="header header-primary text-center">
+                            <div class="logo-container">
+                                <img src="assets/img/now-logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons users_circle-08"></i>
+                                </span>
+                                <input id="name" type="text" class="form-control" placeholder="账户" style="height: 46px;"/>
+                            </div>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons text_caps-small"></i>
+                                </span>
+                                <input id="pass" type="password" placeholder="密码" class="form-control" style="height: 46px;"/>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            <!-- <a class="btn btn-primary btn-round btn-lg btn-block" onabort="login()">登录</a> -->
+							<button class="btn btn-primary btn-round btn-lg btn-block" onclick="login()">登录</button>
+                        </div>
+                </div>
+            </div>
+        </div> 
+	</div>
+</body>
+<script type="text/javascript">
+	function login(){
+		var username = document.getElementById("name").value;
+		var password = document.getElementById("pass").value;
+		if(username =="admin" && password =="pushaodong"){
+			//alert("登录成功");
+			window.location.href= 'view/index.html';
+			return true;
+		}else{
+			alert("账号或密码错误");
+			window.location.href="index.html";
+			return false;
+		}
+	}
+	
+</script>
+</html>
